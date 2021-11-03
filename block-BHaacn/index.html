@@ -1,0 +1,146 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RWD | Assignment II</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/91066ab110.js" crossorigin="anonymous"></script>
+        <!-- Font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header (or Hero section?) -->
+        <header class="header">
+            <div class="container">
+                <div class=" upper-nav-bar flex">
+                    <a class="brand" href="index.html">
+                        Alt Events
+                    </a>
+                    <nav class="flex">
+                        <ul class="flex">
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="#">about</a>
+                            </li>
+                            <li>
+                                <a href="#">services</a>
+                            </li>
+                            <li>
+                                <a href="#">contact</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-short">join us</a>
+                    </nav>        
+                </div>
+                <div class="flex">
+                    <article class="flex-50">
+                        <h1>web developer 
+                            <br>
+                            conference <strong>2020</strong></h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a class="btn btn-long">Register Now</a>
+                    </article>
+                    <figure class="flex-50">
+                        <img src="assets/media/hero.png" alt="Girl emcee-ing">
+                    </figure>
+                </div>
+            </div>
+        </header>
+        <!-- About section -->
+        <section class="about padding">
+            <div class="container flex">
+                <figure class="flex-50">
+                    <img src="assets/media/about.png" alt="People seated in a circle">
+                </figure>
+                <article class="flex-50">
+                    <h2>about the event</h2>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.</p>
+                    <a class="btn btn-short" href="#">Know More</a>
+                </article>
+            </div>
+        </section>
+        <!-- Why Join -->
+        <section class="join padding">
+            <h3>why you should join</h3>
+            <div class="container flex">
+                <article class="flex-30">
+                    <div class="join-content">
+                        <h4>Network</h4>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>    
+                    </div>
+                </article>
+                <article class="flex-30">
+                    <div class="join-content">
+                        <h4>Great Speakers</h4>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>    
+                    </div>
+                </article>
+                <article class="flex-30">
+                    <div class="join-content">
+                        <h4>Information</h4>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>    
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Schedule -->
+        <section></section>
+        <!-- features -->
+        <section class="features padding">
+            <div class="container flex evenly">
+                <div class="flex-22">
+                    <img src="assets/media/speaker.png" alt="Speaker">
+                    <strong>20+</strong>
+                    <span>Great Speakers</span>
+                </div>
+                <div class="flex-22">
+                    <img src="assets/media/speaker.png" alt="Speaker">
+                    <strong>20+</strong>
+                    <span>Great Speakers</span>
+                </div>
+                <div class="flex-22">
+                    <img src="assets/media/speaker.png" alt="Speaker">
+                    <strong>20+</strong>
+                    <span>Great Speakers</span>
+                </div>
+                <div class="flex-22">
+                    <img src="assets/media/speaker.png" alt="Speaker">
+                    <strong>20+</strong>
+                    <span>Great Speakers</span>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
