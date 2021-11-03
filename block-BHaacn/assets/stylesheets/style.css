@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Personal resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+/* Colors */
+:root {
+    --herobg: #3224A2;
+    --lightbg: #FFFFFF;
+    --darkbg: #E1ECFD;
+    --footup: #273477;
+    --footbot: #142165;
+    --crimson: #E53E52;
+}
+/* General classes */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.btn {
+    color: white;
+    background-color: var(--crimson);
+    border-radius: 0.2rem;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.btn-long {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.6rem;
+}
+.btn-short {
+    padding: 0.7rem 1.7rem;
+    font-size: 1.3rem;
+}
+.full {
+    width: 100%;
+}
+.padding {
+    padding: 2rem 0;
+}
+/* Headings */
+h1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 2.9rem; 
+    font-weight: 700;
+    padding-bottom: 3rem; 
+}
+h2 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 3.1rem;
+    font-weight: 800;
+}
+h3 {
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+h4 {
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+/* Flex-specs */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-22 {
+    flex: 0 1 22%;
+}
+.evenly {
+    display: flex;
+    justify-content: space-around;
+}
+/* Custom styling begins */
+
+/* Header section */
+.header {
+    height: 86vh;
+    background: linear-gradient(to right, rgba( 52, 52, 184, 0.8), rgba( 52, 52, 184, 0.8)), url(../media/banner.png) no-repeat;
+    background-size: cover;
+    /* background-color: rgba( 52, 52, 184, 0.9)
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+.header a {
+    color: white;
+}
+.brand {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.header ul a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+}
+.header .btn-short {
+    margin-left: 2.4rem;
+}
+.upper-nav-bar {
+    padding-bottom: 2.7rem;
+}
+.header p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 39rem;
+}
+.header article {
+    justify-content: space-evenly;
+}
+.header img {
+    margin-left: 15rem;
+}
+.header strong {
+    color: var(--crimson);
+}
+/* About section */
+.about p {
+    color: #706F74;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+/* Why join us */
+.join {
+    background-color: var(--darkbg);
+}
+.join article {
+    border: 4px dashed var(--crimson);
+    color: #706F74;
+}
+.join-content {
+    padding: 2rem;
+}
+/* Features */
+.features strong {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.features img {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For smaller screens */
+@media and screen (max-width: 768) {
+    html {
+        font-size: 10px;
+    }
+
+}
